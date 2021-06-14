@@ -2,7 +2,7 @@
 
 > Computer Science 전공 공부 뿌수기 👊
 
-**1회차** [(바로가기)](https://github.com/gyoforit/study_CS/blob/master/CS_study/CS_study_3%EC%9B%941%EC%A3%BC.md) 
+**1회차** [(바로가기)](https://github.com/gyoforit/study_CS/blob/master/CS_study/CS_study_1%ED%9A%8C.md) 
 
 1. [개발상식] 객체지향 프로그래밍이 무엇인가?
 2. [운영체제] 프로세스와 스레드의 차이
@@ -12,7 +12,7 @@
 
 
 
-**2회차** [(바로가기)](https://github.com/gyoforit/study_CS/blob/master/CS_study/CS_study_3%EC%9B%942%EC%A3%BC.md)
+**2회차** [(바로가기)](https://github.com/gyoforit/study_CS/blob/master/CS_study/CS_study_2%ED%9A%8C.md)
 
 1. [개발상식] 함수형 프로그래밍/순수함수 (미완성)
 2. [파이썬] len(range(5))와 len(iter(range(5)))의 실행결과/iterator (미완성)
@@ -20,7 +20,7 @@
 
 
 
-**3회차** [(바로가기)](https://github.com/gyoforit/study_CS/blob/master/CS_study/CS_study_3%EC%9B%943%EC%A3%BC.md)
+**3회차** [(바로가기)](https://github.com/gyoforit/study_CS/blob/master/CS_study/CS_study_3%ED%9A%8C.md)
 
 1. [운영체제] 컴퓨터 시스템에서의 운영체제 (미완성)
 2. [네트워크] 네트워크의 개념, 장점

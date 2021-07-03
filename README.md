@@ -52,3 +52,12 @@
 2. [Back] 오버로딩/오버라이딩
 3. [DB] 트랜잭션
 4. [개발상식] TDD
+
+
+
+📍 **7회차** [(바로가기)](https://github.com/gyoforit/study_CS/blob/master/CS_study/CS_study_7%ED%9A%8C.md)
+
+1. [IT트렌드] MSA
+2. [IT트렌드] functional CSS
+3. [IT트렌드] GraphQL
+4. [IT트렌드] SEO

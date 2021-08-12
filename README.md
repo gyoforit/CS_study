@@ -64,7 +64,7 @@
 
 
 
-**📍 8회차**
+**📍 8회차** [(바로가기)](https://github.com/gyoforit/study_CS/blob/master/CS_study/CS_study_8%ED%9A%8C.md)
 
 1. [DB] 스키마&DB언어
 2. [웹] RESTful API
@@ -72,7 +72,7 @@
 
 
 
-**📍9회차**
+**📍9회차** [(바로가기)](https://github.com/gyoforit/study_CS/blob/master/CS_study/CS_study_9%ED%9A%8C.md)
 
 1. [자료구조] 해시테이블
 2. [운영체제] 교착상태

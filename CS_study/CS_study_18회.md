@@ -53,3 +53,57 @@ DB는 무결성을 지키기 위해 동시에 처리되는 트랜잭션이 서�
    - 레벨 2에서 더 나아가 트랜잭션 영역에 해당하는 데이터에 대한 수정 및 입력이 불가능합니다. 따라서 완벽한 읽기 일관성 모드를 제공합니다.
 
 격리 수준이 높아질 수록 트랜잭션간 고립 정도가 높아지기 때문에 DB 성능이 저하됩니다.
+
+
+
+## 4. [알고리즘] Fibonacci
+
+> Fibonacci에서의 재귀, 동적 프로그래밍, 반복의 세 가지 방식에 대한 시간복잡도와 공간복잡도를 말씀해주세요.
+
+### 1. 재귀
+
+```python
+def fibonacci_recursive(n):
+    if n <= 1:
+        return 1
+   	return fibonacci_recursive(n-2)+fibonacci_recursive(n-1)
+```
+
+재귀로 구현하는 방식의 경우 값을 구할 때마다 매번 첫 항 까지 도달해야하므로 시간복잡도는 O(2^n)입니다. 공간복잡도는 n에 따라 변수 n이 ❓개가 만들어지고, 스택에 쌓이게 되므로 O(❓)이 됩니다. (미완성)
+
+
+
+### 2. 동적 프로그래밍
+
+```python
+def fibonacci_dp(n):
+    DP = [0]*(n+1)
+    if n < 2:
+        return n
+    for i in range(2, n+1):
+        DP[n] = DP[n-1]+DP[n-2]
+    return DP[n]
+```
+
+동적프로그래밍 방식으로 구현하는 경우, 재귀와 달리 memoization을 통해 이전에 구한 값들을 사용할 수 있으므로 O(n)의 시간복잡도를 가집니다. 공간복잡도는 memoization에 필요한 크기 (n+1)의 배열이 필요하므로 O(n)이라고 생각합니다.
+
+
+
+### 3. 반복
+
+```python
+def fibonacci_loop(n):
+    if n <= 1:
+        return n
+    a = 0
+    b = 1
+    answer = 0
+    for i in range(2, n+1):
+        answer = a+b
+        a = b
+        b = answer
+    return answer
+```
+
+반복 방식으로 구현하는 경우 n번째 수를 구하려면 n번 반복하면 되기 때문에 O(n)의 시간복잡도를 가집니다. 공간복잡도의 경우 n번째 값을 한 변수에 재할당만 해주면 되기 때문에 O(1)이라고 생각합니다.
+

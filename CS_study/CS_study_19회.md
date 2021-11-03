@@ -54,3 +54,28 @@ Little Endian = 78 / 56 / 34 / 12
 
 이 됩니다.
 
+
+
+## 4. [자료구조] Stack / Queue
+
+> Stack으로 Queue 구현, Queue로 Stack 구현
+
+### 1. Stack으로 Queue 구현
+
+- Stack A, B를 준비합니다.
+- Enqueue: A에 push 합니다.
+- Dequeue
+  - B에 남은 요소가 있다면 B에 있는 것을 pop합니다.
+  - B에 남은 요소가 없다면 A에 있는 요소들을 모두 pop하여 B로 push합니다. Stack은 가장 나중에 들어간 것이 가장 먼저 나오기 때문에 B에는 기존 데이터가 거꾸로 들어가 있게 됩니다.
+  - B에 있는 것을 pop하면 Queue처럼 가장 먼저 들어간 것이 가장 먼저 나오게 됩니다.
+
+
+
+### 2. Queue로 Stack 구현
+
+- Queue A, B를 준비합니다
+- Push
+  - A에 남은 요소가 있다면 A의 모든 요소들을 dequeue하여 B에 넣습니다. 
+  - 이후 A에 삽입하려는 데이터를 삽입합니다.
+  - B에 옮겨놓은 요소들을 모두 dequeue 하여 A에 삽입합니다. 따라서 가장 나중에 추가된 데이터가 Queue의 맨 앞에 존재하게 됩니다.
+- Pop: A에 있는 요소를 dequeue 합니다.

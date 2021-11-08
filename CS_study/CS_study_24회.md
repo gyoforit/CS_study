@@ -98,3 +98,32 @@
 
   - 라우터에서 MAC주소를 이용하여 필터링 할 수 있습니다.
     - 특정 MAC주소에 대한 접근을 거부하거나 특정 MAC주소만 연결되도록 라우터에 지시할 수 있습니다.
+
+
+
+## 4. [알고리즘] LRU 알고리즘
+
+- 개념: 페이지 교체 알고리즘 중 하나로 페이지 부재 발생시 가장 오랫동안 사용되지 않은 페이지를 제거하는 알고리즘입니다.
+
+- 구현
+
+  ```python
+  cache_size = 5
+  page_list = ['a', 'b', 'c', 'b', 'c', 'd', 'b', 'e', 'a']
+  cache = []
+  
+  for page in page_list:
+      # 찾는 페이지가 있다면 해당 페이지를 최근으로 변경
+      if page in cache:
+          cache.remove(page)
+          cache.insert(len(page_list-1), page)
+      # 없다면 가장 오래된 요소 삭제 후 해당 페이지 삽입
+      else:
+          if len(cache) >= cache_size:
+              cache.pop(0)
+          cache.append(company)
+  ```
+
+  
+
+  

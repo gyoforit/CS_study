@@ -35,7 +35,7 @@
 
 
 
-## 3. [운영체제] Synchronous / Blocking
+## 2. [운영체제] Synchronous / Blocking
 
 > 동기와 비동기, 블로킹과 논블로킹에 대해 설명해주세요.
 
